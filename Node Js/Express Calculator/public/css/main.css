@@ -1,0 +1,67 @@
+body {
+    font-family: calibri;
+    background-image: linear-gradient(#60C5B1,#5FC4AF);
+}
+label{
+    width: 121px;
+    display: inline-block;
+    color:#fff;
+}
+.row{
+    margin-bottom: 10px;
+}
+select[name="operator"] {
+    width: 80px;
+    text-align: center;
+}
+select[name="operator"],
+.row input[type="number"] {
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #bbb;
+}
+input[type="submit"] {
+    border-radius: 4px;
+    padding: 7px;
+    background-color: orange;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid indianred;
+    font-weight: bold;
+}
+fieldset {
+    padding: 26px;
+    border: 1px solid #CDCDED;
+    border-radius: 10px;
+    margin: 61px auto;
+    width: 50%;
+}
+fieldset,legend
+{
+    /* background-color: #E33B5F; */
+    background-color: #a3a3;
+}
+legend {
+    border-radius: 5px;
+    padding: 6px 21px;
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+input[type="number"] {
+    width: 66%;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 53px;
+    text-transform: uppercase;
+}
+a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #eee;
+    font-size: 23px;
+}

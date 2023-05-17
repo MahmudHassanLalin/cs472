@@ -9,6 +9,7 @@ app.use((req, res, next) => {
     console.log("This is always run");
     next();
 });
+app.use(express.static(__dirname + '/public'));
 app.use('/add',(req,res,next)=>{
     addmod.add(req,res,req.query);
 });
