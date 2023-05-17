@@ -1,15 +1,25 @@
 exports.add = function (req, res, vals) {
-    var sum = parseInt(vals.first) + parseInt(vals.second);
+    var sum = calculate(vals);
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.write(`<!DOCTYPE html>
     <html>
     <head><meta charset=\"utf-8\"/>
     <title>Calculator Web Site</title>
+    <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
-    <p>The sum is: ${String(sum)}</p>
+    <fieldset>
+    <h1>The Answer is : ${String(sum)}</h1>
     <a href="/">Another calculation</a>
+    </fieldset>
     </body>
     </html> ` );
     return res.end();
 };
+function calculate(vals)
+{
+    var result=0;
+    result=eval(parseInt(vals.first)+vals.operator+parseInt(vals.second));
+    return result;
+    
+}
