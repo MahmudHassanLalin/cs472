@@ -9,7 +9,7 @@ exports.add = function (req, res, vals) {
     </head>
     <body>
     <fieldset>
-    <h1>The Answer is : ${String(sum)}</h1>
+    <h1>${String(vals.first)} ${String(vals.operator)} ${String(vals.second)} = ${String(sum)}</h1>
     <a href="/">Another calculation</a>
     </fieldset>
     </body>

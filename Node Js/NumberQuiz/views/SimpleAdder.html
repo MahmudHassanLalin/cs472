@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <form action="http://localhost:3000/add">
+        <fieldset>
+            <legend>Enter two numbers</legend>
+            <div>
+                <div class="row">
+                    <label>First Number: </label><input type="number" name="first" />
+                </div>
+                <div class="row">
+                    <label>Second Number: </label><input type="number" name="second" />
+                    <select name="operator">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Calculate" />
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
