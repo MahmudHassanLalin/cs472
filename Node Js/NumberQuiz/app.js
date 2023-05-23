@@ -22,7 +22,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.post('/quiz', (req, res) => {
     var quiz = req.session.quiz;
-    if (parseInt(req.body.answer) == answers[parseInt(quiz.pointer)]) {
+    if (parseInt(req.body.answer) == answers[parseInt(quiz.pointer)]) 
+    {
         req.session.quiz.score = parseInt(quiz.score) + 1;
     }
     req.session.quiz.pointer = parseInt(quiz.pointer) + 1;
