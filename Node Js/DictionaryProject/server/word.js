@@ -1,8 +1,5 @@
 var mySql = require('mysql2');
 
-class Word {
-
-}
 const con = mySql.createConnection({
     host: "localhost",
     user: 'root',
